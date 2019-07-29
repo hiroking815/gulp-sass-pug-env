@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header_content {
+  height: 40px;
+  background-color: #ff5c5c;
+  margin-bottom: 40px;
+}
+
+.header_content p {
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+
+#content {
+  width: 1024px;
+  margin: auto;
+}
+
+#content .inner {
+  margin: auto;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#content .inner .inner_img {
+  height: 200px;
+}
+
+#content .inner .inner_img img {
+  height: 100%;
+}
+
+#content .inner .inner_img p {
+  text-align: center;
+}

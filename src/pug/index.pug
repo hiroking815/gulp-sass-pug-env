@@ -1,0 +1,50 @@
+-var title = 'Pug&Sass'
+-
+  var pages = [
+    {
+      pageName: 'Pug',
+      pageDir: '/'
+    },
+    {
+      pageName: 'Sass',
+      pageDir: '/'
+    },
+    {
+      pageName: 'gulp',
+      pageDir: '/'
+    },
+    {
+      pageName: 'a',
+      pageDir: '/'
+    },
+  ]
+
+doctype html
+html(lang='ja')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='css/style.css')
+    title #{title}
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+  body
+    header.header_content
+      .title
+        p.ttl #{title}
+      .nav_content
+        ul.gnav
+          - for (var x = 0; x < pages.length; x++)
+            li: a(href=pages[x]['pageDir']) #{pages[x]['pageName']}
+    #content
+      .inner
+        .inner_img
+          img(id="id" class="images" src="./img/pug.png" alt="pug")
+          p Pugを
+        .inner_img
+          img(id="id" class="images" src="./img/sass.png" alt="sass")
+          p Sassって
+        .inner_img
+          img(id="id" class="images" src="./img/gulp.png" alt="sass")
+          p gulpしよう
+    script(src='js/script.js')
